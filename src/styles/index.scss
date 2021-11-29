@@ -1,0 +1,9 @@
+@import "./variables.scss"; 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+$color-background: $hawkes-blue;
+
+body {
+  background-color: $color-background;
+  margin: 30px;
+}

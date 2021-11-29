@@ -1,0 +1,40 @@
+@import "src/styles/variables.scss";
+
+.chat {
+  width: fit-content;
+  padding: 0.8em;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size: small;
+}
+
+.chat.white, .chat.white::before {
+  background: $white;
+}
+
+.chat.grey, .chat.grey::before {
+  background: $grey;
+}
+
+.chat::before{
+  content: "";
+  width: 0.7em;
+  height: 0.7em;
+  position: absolute;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.chat.start::before{
+  bottom: 0;
+  left: -0.3em;
+}
+
+.chat.end::before{
+  bottom: 0;
+  right: -0.3em;
+}
